@@ -11,7 +11,7 @@ internal class MenuRegistrarBanda : Menu
 		Console.Write("Digite o nome da banda que deseja registrar: ");
 		string nomeDaBanda = Console.ReadLine()!;
 		Banda banda = new Banda(nomeDaBanda);
-
+		//conferindo banda
 		if (bandasRegistradas.ContainsKey(nomeDaBanda))
 		{
 			Console.WriteLine($"A banda {nomeDaBanda} já está registrada!");
